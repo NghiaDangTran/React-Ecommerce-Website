@@ -21,7 +21,7 @@ const CheckoutForm = () => {
   const curr = useNavigate()
   // Stripe
   const [succeeded, setSucceeded] = useState(false)
-  const [error, setError] = useState(null)
+  const [error, setError] = useState('')
   const [processing, setProcessing] = useState('')
   const [disabled, setDisabled] = useState(true)
   const [clientSecret, setClientSecret] = useState('')

@@ -56,7 +56,7 @@ const Filters = () => {
 
               return <button key={index} name="colors" onClick={e => { handelChange(e); e.preventDefault(); }} value={i} className={`${i === "all" ? "all" : "color"}-btn ${colors.toLowerCase() === i &&"active"}`}
                 style={{ background: `${i}` }}
-              >{i == "all" ? i : colors.toLowerCase() === i &&<FaCheck></FaCheck>}</button>
+              >{i === "all" ? i : colors.toLowerCase() === i &&<FaCheck></FaCheck>}</button>
             })}
 
 

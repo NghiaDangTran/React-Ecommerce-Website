@@ -16,7 +16,7 @@ export const links = [
     text: 'Products',
     url: '/products',
   },
- ,
+ 
 ]
 
 export const services = [

@@ -44,19 +44,20 @@ const filter_reducer = (state, action) => {
     let temp = state.dataFilter
 
     const sortData = (a, b) => {
+
+      let textA = a.name.toLowerCase();
+      let  textB = b.name.toLowerCase();
       if (state.sort === "price-lowest")
         return a.price - b.price
 
       if (state.sort === "price-highest")
         return b.price - a.price
       if (state.sort === "name-a") {
-        var textA = a.name.toLowerCase();
-        var textB = b.name.toLowerCase();
+      
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
       }
       if (state.sort === "name-z") {
-        var textA = a.name.toLowerCase();
-        var textB = b.name.toLowerCase();
+       
         return (textB < textA) ? -1 : (textB > textA) ? 1 : 0;
       }
 

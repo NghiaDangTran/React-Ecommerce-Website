@@ -23,7 +23,7 @@ const products_reducer = (state, action) => {
   if (action.type === GET_PRODUCTS_SUCCESS) {
   
       const ret = action.payload.data.filter(i => {
-        return i.featured == true
+        return i.featured === true
       })
       return { ...state, data: ret, dataLoading: false,dataAll: action.payload.data}
     

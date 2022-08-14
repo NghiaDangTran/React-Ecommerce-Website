@@ -84,7 +84,7 @@ export const FilterProvider = ({ children }) => {
       dispatch({ type: UPDATE_FILTERS, payload: { at, value } })
     }
 
-    else if (at == "freeShipping") {
+    else if (at === "freeShipping") {
       let value = e.target.checked
       dispatch({ type: UPDATE_FILTERS, payload: { at, value } })
     }
