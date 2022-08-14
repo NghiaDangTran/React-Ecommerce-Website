@@ -6,7 +6,7 @@ import { formatPrice } from '../utils/helpers'
 import { Link } from 'react-router-dom'
 
 const CartTotals = () => {
-  const { totalVal, total } = useCartContext()
+  const { totalVal  } = useCartContext()
   const { myUser, loginWithRedirect } = useUserContext()
   return <Wrapper>
     <div>

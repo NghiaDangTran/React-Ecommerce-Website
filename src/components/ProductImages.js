@@ -10,7 +10,7 @@ const ProductImages = ({ img }) => {
 
       {img.map((i, index) => {
         const { thumbnails: { full: { url } } } = i
-        return <img src={url} key={i.id} className={`${curr === index && "active"}`} onClick={
+        return <img src={url} key={i.id} alt="" className={`${curr === index && "active"}`} onClick={
           () => { setCurr(index) }
 
 

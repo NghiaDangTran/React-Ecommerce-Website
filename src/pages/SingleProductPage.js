@@ -25,7 +25,7 @@ const SingleProductPage = () => {
 
     fecthSingleData(`${url}${Address}`)
   }, [Address])
-  if (singleLoading || SingleData.length===0 && !singleErr)
+  if (singleLoading || (SingleData.length===0 && !singleErr))
     return <Wrapper>
       <Loading></Loading>
 
@@ -36,7 +36,7 @@ const SingleProductPage = () => {
 
     </Wrapper>
   }
-  const { stock, id: sku, price, colors, images, reviews, stars, name, description, company } = SingleData
+  const { stock, id: sku, price, images, reviews, stars, name, description, company } = SingleData
   return <Wrapper>
     <PageHero text="Back to Products" text2="name"></PageHero>
     <div className='section section-center page'>

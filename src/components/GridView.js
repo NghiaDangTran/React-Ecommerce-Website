@@ -15,7 +15,7 @@ const GridView = ({ data }) => {
       <div className='products-container'>
 
         {data.map((i, index) => {
-          const { image, name, price, id } = i
+          
 
           return <Product key={index} {...i}></Product>
         })}
