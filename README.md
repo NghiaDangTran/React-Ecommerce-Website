@@ -1,4 +1,32 @@
 # React-ecommerce-website
+This is a furniture website clone where I used react to make the front end of the page with user login, logout by Auth0 and also payment by Stripe
+
+Demo:
+
+
+
+
+
+
+
+https://user-images.githubusercontent.com/33323750/184522286-0f51a1ce-ff34-4159-833c-3fa5d0fe323d.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Update
 ## 02/08/2022 home page:
 
 
