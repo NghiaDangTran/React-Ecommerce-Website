@@ -47,7 +47,7 @@ const CheckoutForm = () => {
   }
   const createPayment = async () => {
     try {
-      const respone = await axios.post("http://localhost:8888/.netlify/functions/create-payment", JSON.stringify({ cart, totalVal, tax: "10", shipping: "999" }))
+      const respone = await axios.post("/.netlify/functions/create-payment", JSON.stringify({ cart, totalVal, tax: "10", shipping: "999" }))
       setClientSecret(respone.data.clientSecret)
     }
     catch (err) {
