@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/icons8-bbb.svg'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -9,25 +9,28 @@ import CartButtons from './CartButtons'
 import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
-  const {myUser}=useUserContext()
+  const { myUser } = useUserContext()
   const { sidebarOpen, openSidebar } = useProductsContext()
   return <SidebarContainer>
     <aside className={`sidebar ${sidebarOpen && 'show-sidebar'}`}>
       <div className='sidebar-header'>
-        <img src={logo} alt="" />
-        <button className='close-btn' onClick={()=>openSidebar(false)}><FaTimes></FaTimes></button>
+        <Link to='/'>
+
+          <img src={logo}></img>
+        </Link>
+        <button className='close-btn' onClick={() => openSidebar(false)}><FaTimes></FaTimes></button>
       </div>
       <ul className='links'>
 
         {links.map(i => {
 
           return <li key={i.id} >
-          <Link to={i.url}>{i.text}</Link>
+            <Link to={i.url}>{i.text}</Link>
           </li>
         })}
         {
-          myUser &&<li  >
-          <Link to='checkout'>check out</Link>
+          myUser && <li  >
+            <Link to='checkout'>check out</Link>
           </li>
         }
 

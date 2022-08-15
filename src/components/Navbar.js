@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.svg'
+import logo from '../assets/icons8-bbb.svg'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -14,8 +14,10 @@ const {myUser}=useUserContext()
   return <NavContainer>
     <div className="nav-center">
       <div className='nav-header'>
-
-        <img src={logo}></img>
+<Link to='/'>
+  
+<img src={logo}></img>
+</Link>
       </div>
         <ul className='nav-links'>
 
@@ -58,7 +60,7 @@ const NavContainer = styled.nav`
     justify-content: space-between;
     img {
       width: 175px;
-      margin-left: -15px;
+      margin-left: 25px;
     }
   }
   .nav-toggle {

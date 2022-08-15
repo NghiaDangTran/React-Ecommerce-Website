@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Footer = () => {
   return <Wrapper>
     <h5>  ©
-      <span> ComfySloth </span></h5>
+      <span> Envato Furniture </span></h5>
 
   </Wrapper>
 }
