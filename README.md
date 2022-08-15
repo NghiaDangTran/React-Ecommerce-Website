@@ -7,7 +7,9 @@ Payment: Stripe
 Host: Netlify
 Backend: Netlify Dev to handle safe payment process 
 
-Demo: 
+Demo: https://ecommerce-web-nghia-dang.netlify.app/
+
+Video:
 
 
 
